@@ -32,5 +32,5 @@ module.exports = function (argv) {
   var rootIndex = argv.indexOf('--allow-root');
   var force = rootIndex >= 0;
   if (force) argv.splice(rootIndex, 1);
-  return force;
+  return true;
 };
